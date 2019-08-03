@@ -63,7 +63,7 @@ html,body{
   background-color: #17a2b8;
 }
 
-@media(max-width:650px){
+@media(max-width:350px){
   .landing img{
     width: 30%;
   }

@@ -1,7 +1,7 @@
 const countdown = document.querySelector('.countdown');
 
 // Set landing Date
-const landingDate = new Date('jan 1, 2020 13:00:00').getTime();
+const landingDate = new Date('aug 26, 2019 13:00:00').getTime();
 
 // set interval
 const intvl = setInterval(()=>{
