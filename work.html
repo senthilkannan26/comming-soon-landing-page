@@ -26,11 +26,11 @@
 
   <body>
     <header>
-      <div class="menu-btn">
+      <button class="menu-btn" aria-label="menu button">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
         <div class="btn-line"></div>
-      </div>
+      </button>
 
       <nav class="menu">
         <div class="menu-branding">
@@ -38,24 +38,16 @@
         </div>
         <ul class="menu-nav">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
+            <a href="index.html" class="nav-link"> Home </a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              About Me
-            </a>
+            <a href="about.html" class="nav-link"> About Me </a>
           </li>
           <li class="nav-item current">
-            <a href="work.html" class="nav-link">
-              My Work
-            </a>
+            <a href="work.html" class="nav-link"> My Work </a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              How To Reach Me
-            </a>
+            <a href="contact.html" class="nav-link"> How To Reach Me </a>
           </li>
         </ul>
       </nav>
@@ -66,72 +58,133 @@
         My
         <span class="text-secondary">Work</span>
       </h1>
-      <h2 class="sm-heading">
-        Check out some of my projects...
-      </h2>
+      <h2 class="sm-heading">Check out some of my projects...</h2>
       <div class="projects">
+        <!-- brick breaker -->
         <div class="item">
-          <a href="brick-breaker.html">
-            <img
-              src="img/projects/brick-breaker.png"
-              alt="Brick breaker Project"
-            />
+          <a href="brick-breaker.html" id="brick-breaker-im">
+            <img src="img/projects/brick-breaker.png" alt="Brick breaker" />
           </a>
-          <a href="brick-breaker.html" class="btn-light">
+          <a
+            href="brick-breaker.html"
+            id="brick-breaker-pr"
+            class="btn-light"
+            aria-labelledby="brick-breaker-im brick-breaker-pr"
+          >
             <i class="fas fa-eye"></i> Project
           </a>
-          <a href="https://github.com/techkanna/break-breaker" class="btn-dark">
+          <a
+            href="https://github.com/techkanna/break-breaker"
+            class="btn-dark"
+            rel="noopener"
+            rel="noreferrer"
+            id="brick-breaker-gi"
+            aria-labelledby="brick-breaker-im brick-breaker-gi"
+          >
             <i class="fab fa-github"></i> Github
           </a>
         </div>
+
+        <!-- today plan -->
         <div class="item">
-          <a href="https://today-plan.now.sh/">
-            <img src="img/projects/today-plan.png" alt="today plan Project" />
+          <a
+            href="https://today-plan.now.sh/"
+            id="today-plan-im"
+            rel="noopener"
+            rel="noreferrer"
+          >
+            <img src="img/projects/today-plan.png" alt="today plan" />
           </a>
-          <a href="https://today-plan.now.sh/" class="btn-light">
+          <a
+            href="https://today-plan.now.sh/"
+            id="today-plan-pr"
+            class="btn-light"
+            rel="noopener"
+            rel="noreferrer"
+            aria-labelledby="today-plan-im today-plan-pr"
+          >
             <i class="fas fa-eye"></i> Project
           </a>
-          <a href="https://github.com/techkanna/today-plan" class="btn-dark">
+          <a
+            href="https://github.com/techkanna/today-plan"
+            class="btn-dark"
+            rel="noopener"
+            rel="noreferrer"
+            id="today-plan-gi"
+            aria-labelledby="today-plan-im today-plan-gi"
+          >
             <i class="fab fa-github"></i> Github
           </a>
         </div>
+
+        <!-- rock-paper-scissor -->
         <div class="item">
-          <a href="https://goofy-williams-9ea1f0.netlify.app/">
+          <a
+            href="https://goofy-williams-9ea1f0.netlify.app/"
+            id="rock-paper-scissor-im"
+            rel="noopener"
+            rel="noreferrer"
+          >
             <img
               src="img/projects/rock-paper-scissor.png"
-              alt="Rock paper scissor Project"
+              alt="Rock paper scissor"
             />
           </a>
           <a
             href="https://goofy-williams-9ea1f0.netlify.app/"
             class="btn-light"
+            id="rock-paper-scissor-pr"
+            rel="noopener"
+            rel="noreferrer"
+            aria-labelledby="rock-paper-scissor-im rock-paper-scissor-pr"
           >
             <i class="fas fa-eye"></i> Project
           </a>
           <a
             href="https://github.com/techkanna/rock-paper-scisser-game"
             class="btn-dark"
+            id="rock-paper-scissor-gi"
+            rel="noopener"
+            rel="noreferrer"
+            aria-labelledby="rock-paper-scissor-im rock-paper-scissor-gi"
           >
             <i class="fab fa-github"></i> Github
           </a>
         </div>
+
+        <!-- github-search -->
         <div class="item">
-          <a href="https://sad-snyder-ba9f28.netlify.app/">
-            <img
-              src="img/projects/github-search.png"
-              alt="github-search Project"
-            />
+          <a
+            href="https://sad-snyder-ba9f28.netlify.app/"
+            id="github-search-im"
+            rel="noopener"
+            rel="noreferrer"
+          >
+            <img src="img/projects/github-search.png" alt="github-search" />
           </a>
-          <a href="https://sad-snyder-ba9f28.netlify.app/" class="btn-light">
+          <a
+            href="https://sad-snyder-ba9f28.netlify.app/"
+            class="btn-light"
+            id="github-search-pr"
+            rel="noopener"
+            rel="noreferrer"
+            aria-labelledby="github-search-im github-search-pr"
+          >
             <i class="fas fa-eye"></i> Project
           </a>
           <a
             href="https://github.com/techkanna/github_search_angular"
             class="btn-dark"
+            id="github-search-gi"
+            rel="noopener"
+            rel="noreferrer"
+            aria-labelledby="github-search-im github-search-gi"
           >
             <i class="fab fa-github"></i> Github
           </a>
         </div>
+
+        <!-- noop -->
         <div class="item">
           <a href="#!">
             <img src="img/projects/project5.jpg" alt="Project" />
@@ -144,9 +197,7 @@
       </div>
     </main>
 
-    <footer id="main-footer">
-      Copyright &copy; 2020
-    </footer>
+    <footer id="main-footer">Copyright &copy; 2020</footer>
 
     <script src="js/main.js"></script>
   </body>
